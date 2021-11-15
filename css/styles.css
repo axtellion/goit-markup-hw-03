@@ -8,6 +8,31 @@
   --accent-color: #2196f3;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -45,7 +70,24 @@ address {
   margin: -1px;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /*--------------header-----------------*/
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
 
 .header-logo {
   font-family: Raleway;
@@ -54,6 +96,13 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.header-list {
+  display: flex;
 }
 
 .header-link {
@@ -62,6 +111,27 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
+}
+
+.header-item {
+  margin-right: 50px;
+}
+
+.header-item:last-child {
+  margin-right: 0;
+}
+
+.header-personal {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-personal-date {
+  margin-left: 50px;
+}
+
+.header-personal-date:first-child {
+  margin-left: 0;
 }
 
 .header-personal-link {
@@ -92,6 +162,11 @@ address {
   background-color: #2f303a;
 }
 
+.hiro-container {
+  padding: 200px 280px;
+  text-align: center;
+}
+
 .hiro-title {
   font-weight: 900;
   font-size: 44px;
@@ -99,14 +174,22 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin-bottom: 30px;
 }
 
 .hiro-btn {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+  min-width: 200px;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  color: var(--third-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hiro-btn:hover,
@@ -116,6 +199,21 @@ address {
 }
 
 /*--------------specificity-----------------*/
+
+.specificity-list {
+  display: flex;
+  padding: 94px 0;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.specificity-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
 .specificity-title {
   font-weight: 700;
   font-size: 14px;
@@ -123,6 +221,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-text-color);
+  margin-bottom: 10px;
 }
 
 .specificity-text {
@@ -133,6 +232,9 @@ address {
 }
 
 /*--------------about-----------------*/
+.about-container {
+  padding-bottom: 94px;
+}
 
 .about-title {
   font-weight: 700;
@@ -140,15 +242,50 @@ address {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.about-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /*--------------team-----------------*/
+.team-container {
+  padding: 94px 0;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .team-title {
@@ -157,6 +294,8 @@ address {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -164,12 +303,17 @@ address {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  padding-bottom: 30px;
 }
 
 /*--------------footer-----------------*/
 
 .footer {
   background-color: #2f303a;
+}
+
+.adres-container {
+  padding: 60px 0;
 }
 
 .footer-link {
@@ -179,6 +323,12 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.adres-item {
+  padding: 5px;
 }
 
 .adres-link {
