@@ -197,6 +197,7 @@ address {
 .hiro-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  border: none;
 }
 
 /*--------------specificity-----------------*/
@@ -206,13 +207,11 @@ address {
   padding: 94px 0;
   flex-wrap: wrap;
   margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .specificity-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .specificity-title {
@@ -266,7 +265,8 @@ address {
 }
 
 .team-container {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -314,9 +314,6 @@ address {
   padding-bottom: 30px;
 }
 
-.team-img {
-  width: 100%;
-}
 /*--------------footer-----------------*/
 
 .footer {
@@ -324,7 +321,8 @@ address {
 }
 
 .adres-container {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-link {
